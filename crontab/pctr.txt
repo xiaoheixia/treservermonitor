@@ -1,0 +1,9 @@
+#TRE clearlog script
+05 02 * * * (cd /data/home/tre/treservermonitor; python logclear.py 1 >> /dev/null 2>&1)
+#TRE Server monitor scripts
+* * * * * (cd /data/home/tre/treservermonitor; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >/tmp/trepmon.log 2>&1)
+* * * * * (cd /data/home/tre/treservermonitor;sleep 10; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >>/tmp/trepmon.log 2>&1)
+* * * * * (cd /data/home/tre/treservermonitor;sleep 20; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >>/tmp/trepmon.log 2>&1)
+* * * * * (cd /data/home/tre/treservermonitor;sleep 30; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >>/tmp/trepmon.log 2>&1)
+* * * * * (cd /data/home/tre/treservermonitor;sleep 40; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >>/tmp/trepmon.log 2>&1)
+* * * * * (cd /data/home/tre/treservermonitor;sleep 50; python treservermonitor.py "TJ,APOLLO_TY_TRE,TRE2PE_SH_SET3,PCTR" >>/tmp/trepmon.log 2>&1)
